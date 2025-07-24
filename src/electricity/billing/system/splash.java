@@ -19,7 +19,6 @@ public class splash extends JFrame{
 
         }catch (Exception e) {
             e.printStackTrace();
-
         }
 
     }
