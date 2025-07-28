@@ -2,10 +2,8 @@ package electricity.billing.system;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.event.ItemEvent;
-import java.awt.event.ItemListener;
+import java.awt.event.*;
+import java.sql.ResultSet;
 
 public class signup extends JFrame implements ActionListener {
     Choice loginaschoice;
@@ -59,9 +57,29 @@ public class signup extends JFrame implements ActionListener {
         name.setBounds(30, 180, 125, 20);
         add(name);
 
-        nameField= new JTextField();
+        nameField= new JTextField(" ");
         nameField.setBounds(170, 180, 125, 20);
         add(nameField);
+        meternumberField.addFocusListener(new FocusListener() {
+            @Override
+            public void focusGained(FocusEvent e) {
+
+            }
+
+            @Override
+            public void focusLost(FocusEvent e) {
+                try{
+                    database db = new database();
+                    ResultSet rs = db.statement.executeQuery("select * from signup where meter_number = '" + meternumberField.getText() + "'");
+                    if(rs.next()) {
+                        nameField.setText(rs.getString("name"));
+
+                    }
+            }catch (Exception ex) {
+                    ex.printStackTrace();
+                }
+            }
+        });
 
         JLabel password= new JLabel("Password");
         password.setBounds(30, 220, 125, 20);
@@ -75,17 +93,20 @@ public class signup extends JFrame implements ActionListener {
             @Override
             public void itemStateChanged(ItemEvent e) {
                 String userType = loginaschoice.getSelectedItem();
-                if (userType.equals("Admin")) {
-                    meternumberField.setVisible(false);
-                    meternumber.setVisible(false);
-                    employeeField.setVisible(true);
-                    employer.setVisible(true);
-                } else if(userType.equals("Customer")) {
-                    meternumberField.setVisible(true);
-                    meternumber.setVisible(true);
-                    employeeField.setVisible(false);
+                if (userType.equals("Customer")) {
                     employer.setVisible(false);
+                    nameField.setEditable(false);
+                    employeeField.setVisible(false);
+                    meternumber.setVisible(true);
+                    meternumberField.setVisible(true);
                 }
+                else if( userType.equals("admin")) {
+                    employer.setVisible(true);
+                    employeeField.setVisible(true);
+                    meternumber.setVisible(false);
+                    meternumberField.setVisible(false);
+                }
+
             }
         });
 
@@ -127,29 +148,23 @@ public class signup extends JFrame implements ActionListener {
             String password = passwordField.getText();
             try{
                 database db = new database();
-                String query = "INSERT INTO signup (meternumber, username, name, password, userType) VALUES ('" + meternumber + "', '" + username + "', '" + name + "', '" + password + "', '" + userType + "')";
+                String query =null;
+                if(userType.equals("Admin")){
+                query = "INSERT INTO signup value ('" + meternumber + "', '" + username + "', '" + name + "', '" + password + "', '" + userType + "')";
+                }
+                else {
+                query = "update  signup  set username = '" + username + "', password = '" + password + "', usertype = '" + userType + "' where meter_number = '" + meternumber + "'";
+                }
                 db.statement.executeUpdate(query);
+                JOptionPane.showMessageDialog(null, "Account Created Successfully");
+                setVisible(false);
+                new login(); // Assuming login is another class that handles the login screen
             }catch (Exception ex) {
                 ex.printStackTrace();
             }
 
-            if (userType.equals("Admin")) {
-                if (username.isEmpty() || name.isEmpty() || password.isEmpty()) {
-                    JOptionPane.showMessageDialog(null, "All fields are required for Admin");
-                } else {
-                    // Code to create admin account
-                    JOptionPane.showMessageDialog(null, "Admin account created successfully");
-                    new login();
-                }
-            } else if (userType.equals("Customer")) {
-                if (meternumber.isEmpty() || username.isEmpty() || name.isEmpty() || password.isEmpty()) {
-                    JOptionPane.showMessageDialog(null, "All fields are required for Customer");
-                } else {
-                    // Code to create customer account
-                    JOptionPane.showMessageDialog(null, "Customer account created successfully");
-                    new login();
-                }
-            }
+
+
         } else if (e.getSource() == backButton) {
             setVisible(false);
             new login(); // Assuming login is another class that handles the login screen

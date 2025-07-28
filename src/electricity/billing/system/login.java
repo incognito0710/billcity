@@ -4,6 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.sql.ResultSet;
 
 public class login extends JFrame implements ActionListener {
     JTextField usernameField, passwordField;
@@ -75,14 +76,22 @@ public void actionPerformed(ActionEvent e) {
             String username = usernameField.getText();
             String password = passwordField.getText();
             String userType = loginChoice.getSelectedItem();
-
-            if (username.isEmpty() || password.isEmpty()) {
-                JOptionPane.showMessageDialog(this, "Please fill all fields", "Error", JOptionPane.ERROR_MESSAGE);
-            } else {
-                // Here you would typically check the credentials against a database
-                JOptionPane.showMessageDialog(this, "Login successful as " + userType);
-                // Proceed to the next screen based on userType
+            try {
+                database db = new database();
+                String query = "SELECT * FROM signup WHERE username='" + username + "' AND password='" + password + "' AND usertype='" + userType + "'";
+                ResultSet resultSet = db.statement.executeQuery(query);
+                if (resultSet.next()) {
+                    String meterNumber = resultSet.getString("meter_number");
+                    setVisible(false);
+                    new main_class(userType, meterNumber); // Assuming main_class is the main application class
+                } else {
+                    JOptionPane.showMessageDialog(this, "Invalid login", "Error", JOptionPane.ERROR_MESSAGE);
+                }
+            }catch (Exception ex) {
+                ex.printStackTrace();
             }
+
+
         } else if (actionCommand.equals("Cancel")) {
             System.exit(0);
         } else if (actionCommand.equals("Sign Up")) {

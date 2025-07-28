@@ -4,7 +4,35 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="07d450a3-a248-4e3a-bc11-b8d72454514a" name="Changes" comment="empty comit" />
+    <list default="true" id="07d450a3-a248-4e3a-bc11-b8d72454514a" name="Changes" comment="empty comit">
+      <change afterPath="$PROJECT_DIR$/src/electricity/billing/system/calculateBill.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/electricity/billing/system/customerDetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/electricity/billing/system/depositDetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/electricity/billing/system/meterInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/electricity/billing/system/newcustomer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/electricity/billing/system/viewInformation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/icon/bill.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/icon/billcalculation.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/icon/billdetails.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/icon/calculatebill.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/icon/calculator.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/icon/customerdetails.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/icon/depositedetails.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/icon/ebs.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/icon/exit.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/icon/meterinfo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/icon/newcustomer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/icon/newcustomer1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/icon/notepad.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/icon/paybill.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/icon/updateinfo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/icon/viewinfo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/billcity.iml" beforeDir="false" afterPath="$PROJECT_DIR$/billcity.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/electricity/billing/system/login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/electricity/billing/system/login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/electricity/billing/system/main_class.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/electricity/billing/system/main_class.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/electricity/billing/system/signup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/electricity/billing/system/signup.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -50,16 +78,23 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.calculateBill.executor": "Run",
+    "Application.customerDetails.executor": "Run",
+    "Application.depositDetails.executor": "Run",
     "Application.login.executor": "Run",
+    "Application.main_class.executor": "Run",
+    "Application.meterInfo.executor": "Run",
+    "Application.newcustomer.executor": "Run",
     "Application.signup.executor": "Run",
     "Application.splash.executor": "Run",
+    "Application.viewInformation.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/NIKITAA/Downloads/mysql-connector-j-9.4.0/mysql-connector-j-9.4.0/mysql-connector-j-9.4.0.jar",
+    "last_opened_file_path": "C:/Users/NIKITAA/Downloads/ResultSet2xml.jar",
     "onboarding.tips.debug.path": "D:/developerjava/practicejava/billcity/src/Main.java",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
@@ -114,7 +149,15 @@
       <option name="project" value="LOCAL" />
       <updated>1753353598811</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="empty comit">
+      <option name="closed" value="true" />
+      <created>1753353777103</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1753353777103</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -166,7 +209,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/electricity/billing/system/signup.java</url>
-          <line>13</line>
+          <line>11</line>
           <properties class="electricity.billing.system.signup" method="&lt;init&gt;">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
