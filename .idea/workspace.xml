@@ -35,19 +35,19 @@
     </excluded-from-favorite>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "incognito0710"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;incognito0710&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubDefaultAccount">
     <option name="defaultAccountId" value="d3936b79-0878-4a7a-a317-2d4662e4b8cc" />
   </component>
   <component name="GithubPullRequestsUISettings"><![CDATA[{
   "selectedUrlAndAccountId": {
     "url": "https://github.com/incognito0710/billcity",
-    "accountId": "d3936b79-0878-4a7a-a317-2d4662e4b8cc"
+    "accountId": "59270b45-063f-4ddf-8546-664dd09310eb"
   }
 }]]></component>
   <component name="ProjectColorInfo">{
@@ -61,31 +61,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Application.calculateBill.executor": "Run",
-    "Application.customerDetails.executor": "Run",
-    "Application.depositDetails.executor": "Run",
-    "Application.login.executor": "Run",
-    "Application.main_class.executor": "Run",
-    "Application.meterInfo.executor": "Run",
-    "Application.newcustomer.executor": "Run",
-    "Application.signup.executor": "Run",
-    "Application.splash.executor": "Run",
-    "Application.viewInformation.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/NIKITAA/Downloads/ResultSet2xml.jar",
-    "onboarding.tips.debug.path": "D:/developerjava/practicejava/billcity/src/Main.java",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Application.calculateBill.executor&quot;: &quot;Run&quot;,
+    &quot;Application.customerDetails.executor&quot;: &quot;Run&quot;,
+    &quot;Application.depositDetails.executor&quot;: &quot;Run&quot;,
+    &quot;Application.login.executor&quot;: &quot;Run&quot;,
+    &quot;Application.main_class.executor&quot;: &quot;Run&quot;,
+    &quot;Application.meterInfo.executor&quot;: &quot;Run&quot;,
+    &quot;Application.newcustomer.executor&quot;: &quot;Run&quot;,
+    &quot;Application.signup.executor&quot;: &quot;Run&quot;,
+    &quot;Application.splash.executor&quot;: &quot;Run&quot;,
+    &quot;Application.viewInformation.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/NIKITAA/Downloads/ResultSet2xml.jar&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;D:/developerjava/practicejava/billcity/src/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="signup" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="electricity.billing.system.signup" />
@@ -236,6 +236,11 @@
           <url>file://$PROJECT_DIR$/src/electricity/billing/system/splash.java</url>
           <line>8</line>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/electricity/billing/system/main_class.java</url>
+          <line>144</line>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
