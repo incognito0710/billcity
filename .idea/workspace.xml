@@ -4,35 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="07d450a3-a248-4e3a-bc11-b8d72454514a" name="Changes" comment="empty comit">
-      <change afterPath="$PROJECT_DIR$/src/electricity/billing/system/calculateBill.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/electricity/billing/system/customerDetails.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/electricity/billing/system/depositDetails.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/electricity/billing/system/meterInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/electricity/billing/system/newcustomer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/electricity/billing/system/viewInformation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/icon/bill.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/icon/billcalculation.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/icon/billdetails.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/icon/calculatebill.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/icon/calculator.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/icon/customerdetails.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/icon/depositedetails.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/icon/ebs.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/icon/exit.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/icon/meterinfo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/icon/newcustomer.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/icon/newcustomer1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/icon/notepad.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/icon/paybill.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/icon/updateinfo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/icon/viewinfo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/billcity.iml" beforeDir="false" afterPath="$PROJECT_DIR$/billcity.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/electricity/billing/system/login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/electricity/billing/system/login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/electricity/billing/system/main_class.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/electricity/billing/system/main_class.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/electricity/billing/system/signup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/electricity/billing/system/signup.java" afterDir="false" />
-    </list>
+    <list default="true" id="07d450a3-a248-4e3a-bc11-b8d72454514a" name="Changes" comment="initial commit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -64,6 +36,12 @@
   <component name="GithubDefaultAccount">
     <option name="defaultAccountId" value="d3936b79-0878-4a7a-a317-2d4662e4b8cc" />
   </component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/incognito0710/billcity",
+    "accountId": "d3936b79-0878-4a7a-a317-2d4662e4b8cc"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
 }</component>
@@ -157,7 +135,15 @@
       <option name="project" value="LOCAL" />
       <updated>1753353777103</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="initial commit">
+      <option name="closed" value="true" />
+      <created>1753692516374</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1753692516374</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -202,7 +188,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value=" initial commit" />
     <MESSAGE value="empty comit" />
-    <option name="LAST_COMMIT_MESSAGE" value="empty comit" />
+    <MESSAGE value="initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
