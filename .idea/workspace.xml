@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="07d450a3-a248-4e3a-bc11-b8d72454514a" name="Changes" comment="initial commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/electricity/billing/system/main_class.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/electricity/billing/system/main_class.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/electricity/billing/system/viewInformation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/electricity/billing/system/viewInformation.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,15 +43,12 @@
     &quot;assignee&quot;: &quot;incognito0710&quot;
   }
 }</component>
-  <component name="GithubDefaultAccount">
-    <option name="defaultAccountId" value="d3936b79-0878-4a7a-a317-2d4662e4b8cc" />
-  </component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/incognito0710/billcity",
-    "accountId": "59270b45-063f-4ddf-8546-664dd09310eb"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/incognito0710/billcity&quot;,
+    &quot;accountId&quot;: &quot;59270b45-063f-4ddf-8546-664dd09310eb&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
 }</component>
@@ -167,7 +166,15 @@
       <option name="project" value="LOCAL" />
       <updated>1753693544953</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="initial commit">
+      <option name="closed" value="true" />
+      <created>1753696350540</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1753696350540</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

@@ -176,7 +176,34 @@ public class main_class extends JFrame implements ActionListener {
     }
     @Override
     public void actionPerformed(ActionEvent e) {
+        String msg = e.getActionCommand();
+        if (msg.equals("New Customer")) {
+            new newcustomer();
+        } else if (msg.equals("Customer Details")) {
+            new customerDetails();
+        } else if (msg.equals("deposit details")) {
+            new depositDetails();
+        } else if (msg.equals("Calculate Bill")) {
+            new calculateBill();
+        }else if (msg.equals("view information")) {
+            new viewInformation(meterpass);
+        }  else if (msg.equals("Notepad")) {
+            try {
+                Runtime.getRuntime().exec("notepad.exe");
+            } catch (Exception ex) {
+                ex.printStackTrace();
+            }
+        } else if (msg.equals("Calculator")) {
+            try {
+                Runtime.getRuntime().exec("calc.exe");
+            } catch (Exception ex) {
+                ex.printStackTrace();
+            }
+        } else if (msg.equals("Exit")) {
+            System.exit(0);
 
+
+        }
     }
     public static void main(String[] args) {
         new main_class(" ","");

@@ -2,11 +2,16 @@ package electricity.billing.system;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.sql.ResultSet;
 import java.util.WeakHashMap;
 
-public class viewInformation extends JFrame {
-    viewInformation(){
+public class viewInformation extends JFrame implements ActionListener {
+    String veiw;
+    JButton closeButton;
+    viewInformation(String veiw) {
+        this.veiw = veiw;
         setBounds(350, 150, 850, 650);
         getContentPane().setBackground(Color.white);
         setLayout(null);
@@ -70,21 +75,41 @@ public class viewInformation extends JFrame {
 
         try {
             database db = new database();
-            ResultSet rs = db.statement.executeQuery("select * from newcustomer where meter_number ");
+            ResultSet rs = db.statement.executeQuery("select * from newcustomer where meter_number= '" +veiw+ "'");
+            if (rs.next()) {
+                nameValue.setText(rs.getString("name"));
+                meternumberValue.setText(rs.getString("meter_number"));
+                addressValue.setText(rs.getString("address"));
+                cityValue.setText(rs.getString("city"));
+                stateValue.setText(rs.getString("state"));
+                emailValue.setText(rs.getString("email"));
+                phoneValue.setText(rs.getString("phonenumber"));
+            }
 
-        }
-        catch (Exception e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
+        closeButton = new JButton("Close");
+        closeButton.setBounds(300, 400, 100, 30);
+        closeButton.setBackground(Color.BLACK);
+        closeButton.setForeground(Color.WHITE);
+        closeButton.addActionListener(this);
+        add(closeButton);
 
 
-        setVisible(true);}
-
-
-
-
-    public static void main(String[] args) {
-        new viewInformation();
+        setVisible(true);
+    }
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        if(e.getSource() == closeButton) {
+            setVisible(false);
+        }
 
     }
+    public static void main(String[] args) {
+        new viewInformation("");
+
+    }
+
+
 }
