@@ -187,7 +187,10 @@ public class main_class extends JFrame implements ActionListener {
             new calculateBill();
         }else if (msg.equals("view information")) {
             new viewInformation(meterpass);
-        }  else if (msg.equals("Notepad")) {
+        } else if (msg.equals("update information")) {
+            new updateinformation(meterpass);
+        }
+        else if (msg.equals("Notepad")) {
             try {
                 Runtime.getRuntime().exec("notepad.exe");
             } catch (Exception ex) {

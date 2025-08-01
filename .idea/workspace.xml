@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="07d450a3-a248-4e3a-bc11-b8d72454514a" name="Changes" comment="initial commit" />
+    <list default="true" id="07d450a3-a248-4e3a-bc11-b8d72454514a" name="Changes" comment="commit">
+      <change afterPath="$PROJECT_DIR$/src/electricity/billing/system/updateinformation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/electricity/billing/system/main_class.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/electricity/billing/system/main_class.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/electricity/billing/system/signup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/electricity/billing/system/signup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/electricity/billing/system/viewInformation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/electricity/billing/system/viewInformation.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -56,31 +62,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Application.calculateBill.executor&quot;: &quot;Run&quot;,
-    &quot;Application.customerDetails.executor&quot;: &quot;Run&quot;,
-    &quot;Application.depositDetails.executor&quot;: &quot;Run&quot;,
-    &quot;Application.login.executor&quot;: &quot;Run&quot;,
-    &quot;Application.main_class.executor&quot;: &quot;Run&quot;,
-    &quot;Application.meterInfo.executor&quot;: &quot;Run&quot;,
-    &quot;Application.newcustomer.executor&quot;: &quot;Run&quot;,
-    &quot;Application.signup.executor&quot;: &quot;Run&quot;,
-    &quot;Application.splash.executor&quot;: &quot;Run&quot;,
-    &quot;Application.viewInformation.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/NIKITAA/Downloads/ResultSet2xml.jar&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;D:/developerjava/practicejava/billcity/src/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.calculateBill.executor": "Run",
+    "Application.customerDetails.executor": "Run",
+    "Application.depositDetails.executor": "Run",
+    "Application.login.executor": "Run",
+    "Application.main_class.executor": "Run",
+    "Application.meterInfo.executor": "Run",
+    "Application.newcustomer.executor": "Run",
+    "Application.signup.executor": "Run",
+    "Application.splash.executor": "Run",
+    "Application.updateinformation.executor": "Run",
+    "Application.viewInformation.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/NIKITAA/Downloads/ResultSet2xml.jar",
+    "onboarding.tips.debug.path": "D:/developerjava/practicejava/billcity/src/Main.java",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="signup" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="electricity.billing.system.signup" />
@@ -178,7 +185,15 @@
       <option name="project" value="LOCAL" />
       <updated>1753864342455</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="commit">
+      <option name="closed" value="true" />
+      <created>1753864648865</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1753864648865</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -229,20 +244,12 @@
     <MESSAGE value=" initial commit" />
     <MESSAGE value="empty comit" />
     <MESSAGE value="initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
+    <MESSAGE value="commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/electricity/billing/system/signup.java</url>
-          <line>11</line>
-          <properties class="electricity.billing.system.signup" method="&lt;init&gt;">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/electricity/billing/system/splash.java</url>
           <line>8</line>
